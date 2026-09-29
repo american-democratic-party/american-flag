@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- - - - - - - - - - -->
 <!-- American Flag     -->
-<!-- Version 1.0.1     -->
+<!-- Version {{package.version}}     -->
 <!-- CC0 1.0 Universal -->
 <!-- - - - - - - - - - -->
-<!-- https://github.com/american-democratic-party/american-flag -->
+<!-- {{package.homepage}} -->
 <svg xmlns="http://www.w3.org/2000/svg" width="1235px" height="650px" viewBox="0 0 1235 650">
 
    <defs>

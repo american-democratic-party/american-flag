@@ -1,0 +1,45 @@
+{
+   "name": "american-flag",
+   "version": "1.0.1",
+   "description": "🇺🇸 American Flag 🇺🇸",
+   "license": "CC0-1.0",
+   "type": "module",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/american-democratic-party/american-flag.git"
+   },
+   "homepage": "https://github.com/american-democratic-party/american-flag",
+   "bugs": "https://github.com/american-democratic-party/american-flag/issues",
+   "docs": "https://github.com/american-democratic-party/american-flag#readme",
+   "author": "American Democratic Party (https://american-democratic-party.org)",
+   "keywords": [
+      "american",
+      "flag",
+      "svg"
+   ],
+   "cliConfig": {
+      "macros": {
+         "article-link-html": "<li><a href={[webRoot]}/article/{{file.folder}}>{{articleTitle}}</a></li>"
+      }
+   },
+   "runScriptsConfig": {
+      "clean": [
+         "rimraf dist/american-flag.svg"
+      ],
+      "validate": [
+         "fxp val -f src/american-flag.xml --lang en"
+      ],
+      "build": [
+         "replacer src/american-flag.xml dist --rename=american-flag.svg"
+      ]
+   },
+   "scripts": {
+      "test": "run-scripts clean validate build"
+   },
+   "devDependencies": {
+      "fxp-cli": "~0.0",
+      "replacer-util": "~1.6.9",
+      "rimraf": "~6.1",
+      "run-scripts-util": "~1.4"
+   }
+}
