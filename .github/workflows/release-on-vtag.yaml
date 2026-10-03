@@ -1,0 +1,15 @@
+# american-flag
+
+name: Create Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6             #see: https://github.com/actions/checkout/releases
+      - uses: softprops/action-gh-release@v2  #see: https://github.com/softprops/action-gh-release/releases

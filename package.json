@@ -4,6 +4,9 @@
    "description": "🇺🇸 American Flag 🇺🇸",
    "license": "CC0-1.0",
    "type": "module",
+   "files": [
+      "dist"
+   ],
    "repository": {
       "type": "git",
       "url": "git+https://github.com/american-democratic-party/american-flag.git"
@@ -17,11 +20,6 @@
       "flag",
       "svg"
    ],
-   "cliConfig": {
-      "macros": {
-         "article-link-html": "<li><a href={[webRoot]}/article/{{file.folder}}>{{articleTitle}}</a></li>"
-      }
-   },
    "runScriptsConfig": {
       "clean": [
          "rimraf dist/american-flag.svg"
